@@ -5,8 +5,8 @@ deploy_directory: /webapps/mywebapp
 app_name: mywebapp
 
 ## stolen from https://github.com/jgrowl/ansible-playbook-ruby-from-src
-rubyTmpDir: /usr/local/src
-rubyUrl: http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
-rubyCompressedFile: ruby-2.0.0-p247.tar.gz
-rubyName: ruby-2.0.0-p247
-tmpRubyPath: $rubyTmpDir/$rubyName
+ruby_tmp_dir: /usr/local/src
+ruby_url: http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p247.tar.gz
+ruby_compressed_file: ruby-2.0.0-p247.tar.gz
+ruby_name: ruby-2.0.0-p247
+tmp_ruby_path: "{{ ruby_tmp_dir }}/{{ ruby_name }}"

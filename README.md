@@ -9,8 +9,8 @@ It installs:
 - memcached
 - Redis (for Sidekiq)
 
-Change the app name, host and deploy directory in <code>vars/defaults.yml</code>.
+Change the app name, host and deploy directory in `vars/defaults.yml`
 
 To run:
 
-    $ ansible-playbook ruby-webapp.yml
+    $ ansible-playbook ruby-webapp.yml -i hosts
