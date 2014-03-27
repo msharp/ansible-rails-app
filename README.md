@@ -13,4 +13,10 @@ Change the app name, host and deploy directory in `vars/defaults.yml`
 
 To run:
 
+Create the Vagrant box:
+  
+    $ vagrant up
+
+Then run the Ansible playbook:
+
     $ ansible-playbook ruby-webapp.yml -i hosts
